@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your profile account"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/purple_500"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingBottom="20dp"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="NIM"
+                    android:layout_marginTop="10dp"
+                    app:primaryColor="@color/purple_500"
+                    app:secondaryColor="@color/black">
+
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/nim_regist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="Nama"
+                    app:primaryColor="@color/purple_500"
+                    app:secondaryColor="@color/black"
+                    android:layout_marginTop="10dp">
+
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="Password"
+                    android:layout_marginTop="10dp"
+                    app:primaryColor="@color/purple_500"
+                    app:secondaryColor="@color/black">
+
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/password_regist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:textColor="@color/black"/>
+
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="Kelas"
+                    app:primaryColor="@color/purple_500"
+                    app:secondaryColor="@color/black"
+                    android:layout_marginTop="10dp">
+
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/kelas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:labelText="Deskripsi Kepribadian"
+                    app:primaryColor="@color/purple_500"
+                    app:secondaryColor="@color/black"
+                    android:layout_marginTop="10dp">
+
+                    <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                        android:id="@+id/deksripsi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+                <com.ornach.nobobutton.NoboButton
+                    android:id="@+id/btn_next_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    app:nb_text="REGISTER"
+                    app:nb_borderColor="@color/purple_700"
+                    app:nb_borderWidth="2dp"
+                    app:nb_backgroundColor="@color/purple_500"
+                    app:nb_textColor="@color/white"
+                    app:nb_radius="5dp"/>
+
+                <Button
+                    android:id="@+id/btn_prev_register"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:background="@android:color/transparent"
+                    android:text="Sudah Punya Akun? Masuk"
+                    android:textColor="@color/blue"
+                    android:textAllCaps="false"
+                    android:paddingRight="5dp"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+
+</LinearLayout>

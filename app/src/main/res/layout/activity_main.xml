@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR PROFILE"
+        android:textColor="@color/purple_500"
+        android:textStyle="italic"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"/>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="10dp"
+        app:nb_text="PROFILE"
+        app:nb_borderColor="@color/purple_700"
+        app:nb_borderWidth="2dp"
+        app:nb_backgroundColor="@color/purple_500"
+        app:nb_textColor="@color/white"
+        app:nb_radius="5dp"/>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="10dp"
+        app:nb_text="LOGOUT"
+        app:nb_borderColor="@color/purple_700"
+        app:nb_borderWidth="2dp"
+        app:nb_backgroundColor="@color/purple_500"
+        app:nb_textColor="@color/white"
+        app:nb_radius="5dp"/>
+
+</LinearLayout>

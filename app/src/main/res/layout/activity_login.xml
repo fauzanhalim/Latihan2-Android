@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="YOUR PROFILE"
+            android:textColor="@color/purple_500"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"/>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:cardBackgroundColor="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in to your account"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="NIM"
+                app:maxCharacters="8"
+                app:primaryColor="@color/purple_500"
+                app:secondaryColor="@color/black"
+                >
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"/>
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+            <studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+                android:id="@+id/password_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:labelText="Password"
+                android:layout_marginTop="10dp"
+                app:primaryColor="@color/purple_500"
+                app:secondaryColor="@color/black">
+
+                <studio.carbonylgroup.textfieldboxes.ExtendedEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:textColor="@color/black"/>
+
+            </studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.ornach.nobobutton.NoboButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="10dp"
+        app:nb_text="LOGIN"
+        app:nb_borderColor="@color/purple_700"
+        app:nb_borderWidth="2dp"
+        app:nb_backgroundColor="@color/purple_500"
+        app:nb_textColor="@color/white"
+        app:nb_radius="5dp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="25dp"
+        android:background="@android:color/transparent"
+        android:text="Belum Punya Akun? Register"
+        android:textColor="@color/blue"
+        android:textAllCaps="false"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:layout_marginRight="31dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
